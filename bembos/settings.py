@@ -135,9 +135,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-    )
+#STATICFILES_DIRS = (
+#    os.path.join(BASE_DIR, 'static'),
+#    )
 
 
 MEDIA_URL = '/media/'
@@ -145,15 +145,15 @@ MEDIA_ROOT= os.path.join(BASE_DIR,'media')
 
 #STATICFILES_STORAGE = 'bembos.storage.CompressedManifestStaticFileStorage'
 
-REST_FRAMEWORK = {
+#REST_FRAMEWORK = {
     #'DEFAULT_PERMISSION_CLASSES':[
     #   'rest_framework.permissions.IsAuthenticatedOrReadOnly',
     #] 
-    'DEFAULT_PERMISSION_CLASSES':[
-        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
-    ]
+    #'DEFAULT_PERMISSION_CLASSES':[
+    #    'rest_framework.permissions.IsAuthenticatedOrReadOnly',
+    #]
     #'DEFAULT_AUTHENTICATION_CLASSES':[
     #    'rest_framework_simplejwt.authentication.JWTAuthentication',
     #]
     #'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
-}
+#}
