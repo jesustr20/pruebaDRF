@@ -23,7 +23,7 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-logeo/', include(('apps.logeo.urls', 'logeo'))),#API PARA EL LOGIN - RUTA DEL LOGIN
-    path('api-pedido/', include(('apps.pedidos.urls', 'pedidos'))),
+    path('api', include(('apps.pedidos.urls', 'pedidos'))),
     path('api-auth', include('rest_framework.urls')),
     path('api/token', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/refresh', TokenRefreshView.as_view(), name='token_refresh'),
