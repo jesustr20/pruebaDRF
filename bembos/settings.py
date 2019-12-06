@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    #'whitenoise.middleware.WhiteNoiseMiddleware',
 
 ]
 
@@ -143,7 +143,7 @@ STATICFILES_DIRS = (
 MEDIA_URL = '/media/'
 MEDIA_ROOT= os.path.join(BASE_DIR,'media')
 
-STATICFILES_STORAGE = 'bembos.storage.CompressedManifestStaticFileStorage'
+#STATICFILES_STORAGE = 'bembos.storage.CompressedManifestStaticFileStorage'
 
 REST_FRAMEWORK = {
     #'DEFAULT_PERMISSION_CLASSES':[
