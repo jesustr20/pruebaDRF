@@ -1,0 +1,20 @@
+Settings:
+1. Definir las variables STATIC
+2. Definir WhiteNoise (también es una variable)
+3. Agregar en el listado de Middleware al sensual WhiteNoise :v
+4. Habilitar el Allowed hosts con '*', para que no te bloquee pe crack :v
+5. Debug en false si ya harás tú despliegue. Pero debes haber configurado todo lo relacionado a los archivos estáticos
+
+Urls del proyecto:
+1. Agregar la ruta de los archivos estáticos
+
+2. Crea tu procfile. Debes definir web: gunicorn tuproyectopapi.wsgi
+Esto te ayudará a que tu proyecto corra en heroku. Sino vales verga :v
+
+* Una de las cosas más importante que deben considerar es que Django no permite nativamente trabajar con archivos estáticos. Por eso se definen Static y el WhiteNoise >:v Ahora, hay un comando que deben ejecutar para desplegar sus archivos estáticos. En el enlace de despliegue de archivos estáticos está.
+
+** No se olviden de pushear primero a su repo en github o gitlab, que de ahí :'v
+
+*** En cuanto a heroku, les recomiendo ejecutar el cmd en modo admin. Luego, ya ustedes mismos son con el push a heroku. Y siempre importante su requirements.txt
+
+Siempre hagan pruebas localmente en modo debug (true). Pq en producción (debug false) no les mostrará error, Salvo la página error 500 por defecto

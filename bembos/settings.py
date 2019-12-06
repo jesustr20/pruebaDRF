@@ -11,9 +11,6 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-import django_heroku
-
-django_heroku.settings(locals())
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'i7fne^1f)&%gukk=*wf%rob^z4@ch76-9a6=j7t5y4^6s_^0pd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -142,7 +139,7 @@ STATICFILES_DIRS = (
 MEDIA_URL = '/media/'
 MEDIA_ROOT= os.path.join(BASE_DIR,'media')
 
-STATICFILES_STORAGE = 'bembos.storage.CompressedManifestStaticFileStorage'
+#STATICFILES_STORAGE = 'bembos.storage.CompressedManifestStaticFileStorage'
 
 REST_FRAMEWORK = {
     #'DEFAULT_PERMISSION_CLASSES':[
