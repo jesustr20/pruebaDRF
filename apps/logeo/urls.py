@@ -12,5 +12,5 @@ router.register(r'auth', AuthHypViewSet)
 router.register(r'usuario', UsuarioHypViewSet)
 
 urlpatterns = [
-    path('logeo/', include(router.urls))
+    path('', include(router.urls))
 ]

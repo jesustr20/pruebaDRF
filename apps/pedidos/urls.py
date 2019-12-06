@@ -12,5 +12,5 @@ router.register(r'Pedidos', PedidoHypViewSet)
 router.register(r'DetallePedidos', DetallePedidoHypViewSet)
 
 urlpatterns = [
-    path('pedido/', include (router.urls))
+    path('', include (router.urls))
 ]
